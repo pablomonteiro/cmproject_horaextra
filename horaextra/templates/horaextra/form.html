@@ -1,0 +1,39 @@
+{% extends './base.html' %}
+
+{% block contents %}
+
+<!-- Text input-->
+<div class="form-group">
+    <label class="col-md-2 control-label" for="Nome">Tarefa <h11>*</h11></label>  
+    <div class="col-md-8">
+        {{registro.tarefa}}
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="col-md-2 control-label" for="Nome">Data <h11>*</h11></label>  
+    <div class="col-md-8">
+        {{registro.data}}
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="col-md-2 control-label" for="Nome">Início <h11>*</h11></label>  
+    <div class="col-md-2">
+        {{registro.hora_inicio}}
+    </div>
+    
+    <label class="col-md-1 control-label" for="Nome">Término<h11>*</h11></label>  
+    <div class="col-md-2">
+        {{registro.hora_termino}}
+    </div>
+</div>
+
+<div class="form-group">
+    <label class="col-md-2 control-label" for="Nome">O que foi feito <h11>*</h11></label>  
+    <div class="col-md-8">
+        {{registro.observacao}}
+    </div>
+</div>
+  
+  {% endblock %}
