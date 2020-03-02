@@ -4,3 +4,5 @@ python:
   - "3.8-dev"
 script:
   python -m unittest discover
+env:
+  -DJANGO=3.0 DB=sqlite
